@@ -32,5 +32,6 @@ Visit `<base_url>/api-docs` to view swagger API docs.
   - license
   - bugs
 - Update `transports.DailyRotateFile` options in `src/config/logger.ts` as necessary.
-- Copy `.env.example.dev` or `.env.example.prod` to a `.env` file and update the environment variabes as necessary.
+- Copy `.env.example.dev` or `.env.example.prod` to a `.env` file and update the environment variables as necessary.
+- Update PM2 configs in `ecosystem.config.js` as necessary.
 - Review the turned off linting rules in `.eslintrc` and update them as necessary.
