@@ -14,12 +14,10 @@ const getUserById = asyncHandler(async (req: Request, res: Response) => {
   const userResult = await getUserByIdService.execute(parameters);
 
   if (!userResult.success) {
-    const exception = userResult.hasOwnProperty('exception')
-      // include exception to the Error object to be logged in the error handler
-      ? new APIError({ ...usersErrors.USER_ERROR_1, additionalData: { exception: userResult.exception } })
-      : new APIError(usersErrors.USER_ERROR_1);
-
-    throw exception;
+    throw new APIError({
+      ...usersErrors.USER_ERROR_1,
+      additionalData: userResult.hasOwnProperty('exception') ? { exception: userResult.exception } : {},
+    });
   }
 
   res.status(httpStatus.OK).json({
