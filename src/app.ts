@@ -13,7 +13,7 @@ import logger from './config/logger';
 
 const app = express();
 
-app.use(morgan('dev', {
+app.use(morgan(':method :url :status :response-time ms', {
   skip: () => config.env === 'test',
   stream: { write: (message: string) => logger.info(message) },
 }));
