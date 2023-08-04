@@ -14,7 +14,8 @@
     "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts",
     "restart": "npm run build & pm2 restart ecosystem.config.js",
     "test": "jest --forceExit --detectOpenHandles",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
