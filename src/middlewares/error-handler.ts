@@ -63,7 +63,7 @@ const handler = (err: any, req: Request, res: Response, next: NextFunction) => {
   res.status(err.status).json({
     code: err.status,
     message: err.isPublic ? err.message : httpStatus[err.status],
-    stack: config.env === 'development' ? err.stack : undefined,
+    ...(config.env === 'development' && { stack: err.stack }),
   });
 };
 
