@@ -4,6 +4,7 @@
   "description": "typescript api starter",
   "author": "Mark Adel",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "build": "rimraf ./dist & tsc",
     "start:prod": "npm run build && pm2 start ecosystem.config.js --env production",
