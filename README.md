@@ -4,9 +4,9 @@
 
 Clone the repository
 ```bash
-$ git clone git@github.com:MarkAdell/typescipt-api-starter.git
+$ git clone git@github.com:MarkAdell/typescript-api-starter.git
 
-$ cd typescipt-api-starter
+$ cd typescript-api-starter
 ```
 
 Install the dependencies

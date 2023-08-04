@@ -1,5 +1,5 @@
 {
-  "name": "typescipt-api-starter",
+  "name": "typescript-api-starter",
   "version": "1.0.0",
   "description": "typescript api starter",
   "main": "index.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarkAdell/typescipt-api-starter.git"
+    "url": "git+https://github.com/MarkAdell/typescript-api-starter.git"
   },
   "keywords": [],
   "author": "Mark Adel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MarkAdell/typescipt-api-starter/issues"
+    "url": "https://github.com/MarkAdell/typescript-api-starter/issues"
   },
-  "homepage": "https://github.com/MarkAdell/typescipt-api-starter#readme",
+  "homepage": "https://github.com/MarkAdell/typescript-api-starter#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "celebrate": "^15.0.0",
