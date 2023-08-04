@@ -9,7 +9,7 @@
     "start:staging": "npm run build && pm2 start ecosystem.config.js --env development",
     "start:dev": "nodemon src/index.ts",
     "restart": "npm run build & pm2 restart ecosystem.config.js",
-    "test": "jest",
+    "test": "jest --forceExit --detectOpenHandles",
     "lint": "eslint src"
   },
   "repository": {
